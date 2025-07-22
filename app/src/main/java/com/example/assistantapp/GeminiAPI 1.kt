@@ -13,7 +13,7 @@ import kotlinx.coroutines.*
 val model = GenerativeModel(
     modelName = "gemini-1.5-flash",
 
-    apiKey = "AIzaSyCKkNkuOgo3RXlaaYBj05TrtOOZMcO7OUc",
+    apiKey = "API_KEY",
 
     generationConfig = generationConfig {
         temperature = 1.5f
