@@ -1,3 +1,7 @@
+<div align="center">
+<img width="250" height="250" alt="SENSAURA AI" src="https://github.com/user-attachments/assets/1be50476-d935-4d90-9436-89fbbeaf543b" />
+</div>
+
 # Blind Navigation Assistant
 
 Blind Navigation Assistant is an Android application designed to help visually impaired users navigate their surroundings and stay safe. The app provides a suite of features to enhance accessibility and provide peace of mind for both users and their loved ones.
