@@ -13,6 +13,21 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECEIVE_MEDIA_BUTTON" />
 
+    <!-- Fall detection permissions -->
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <!-- Emergency contact permissions -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Foreground service permission for fall detection -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
+
     <queries>
         <intent>
             <action android:name="android.intent.action.TTS_SERVICE" />
@@ -41,7 +56,12 @@
             </intent-filter>
         </activity>
 
-
+        <!-- Fall Detection Service -->
+        <service
+            android:name=".FallDetectionService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="health" />
 
     </application>
 

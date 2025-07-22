@@ -100,5 +100,8 @@ dependencies {
 
     implementation("com.google.cloud:google-cloud-speech:2.2.1")
 
-
+    // Fall detection and emergency contact dependencies
+    implementation("androidx.lifecycle:lifecycle-service:2.7.0")
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
 }
